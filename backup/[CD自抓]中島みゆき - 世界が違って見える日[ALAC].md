@@ -26,7 +26,7 @@
 
 ### ジャケ写
 
-<div align="center"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/fdd7aa61-72f4-47c8-a578-fad9e801fd47"></div>
+<div align="center"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/99b54864-bfd0-4ac6-ab18-cc729f54a1b1"></div>
 
 ### ダウンロード
 
