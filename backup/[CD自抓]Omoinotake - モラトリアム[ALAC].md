@@ -12,4 +12,4 @@ Omoinotake初の映画主題歌となる「モラトリアム」決して報わ�
 ### ダウンロード
 https://1drv.ms/f/s!AsXN8HZUCwr2hMcetI8GkX27aOLXYQ?e=tcyqWC
 
-<!-- ##{"style":"<style>.postTitle{font-size:10px}</style>"}## -->
+<!-- ##{"style":"<style>.postTitle{font-size:20px}</style>"}## -->
