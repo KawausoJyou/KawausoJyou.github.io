@@ -12,8 +12,9 @@
         else if(localStorage.getItem("meek_theme")=="light"){document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="light";}
     </script>
     
-<meta name="description" content="Stay hungry, Stay foolish.">
-<title>Hayashikawa</title>
+<meta name="description" content="记亚马逊日本海淘">
+<title>记亚马逊日本海淘</title>
+
 
 </head>
 <style>
@@ -24,103 +25,75 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </style>
 
 <style>
-.avatar {transition: 0.8s;width:64px;height:64px;object-fit: cover;}
-.avatar:hover{transform: scale(1.15) rotate(360deg);}
-#header h1 a{color:inherit;text-decoration:none;vertical-align: bottom;font-size:40px;font-family:Monaco;margin-left:8px;}
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
 .title-right{display:flex;margin:auto 0 0 auto;}
-.title-right button{margin-right:8px;padding:16px;}
-.title-right .circle{padding: 14px 16px;}
-
-.SideNav{min-width: 360px;}
-.SideNav-icon{margin-right: 16px}
-.SideNav-item .Label{color: #fff;margin-left:8px;}
-.d-flex{min-width:0;}
-.listTitle{overflow:hidden;white-space:nowrap;text-overflow: ellipsis;max-width: 100%;}
-.listLabels{white-space:nowrap;}
-.listLabels object{max-height:16px;max-width:24px;}
-
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
 @media (max-width: 600px) {
     body {padding: 8px;}
-    .avatar {width:40px;height:40px;}
-    .blogTitle{display:none;}
-    #buttonRSS{display:none;}
-    .LabelTime{display:none;}
+    .postTitle{font-size:24px;}
 }
 </style>
 
 
+
+
 <body>
     <div id="header">
-<h1>
-    <img src="https://raw.githubusercontent.com/KawausoJyou/KawausoJyou.github.io/main/Logo.png" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">Hayashikawa</a></h1>
+<h1 class="postTitle">记亚马逊日本海淘</h1>
 <div class="title-right">
-    <a href="https://KawausoJyou.github.io/tag.html"><button id="buttonSearch" class="btn btn-invisible circle" title="搜索">
-        <svg class="octicon" width="16" height="16" >
-            <path id="pathSearch" fill-rule="evenodd"></path>
+    
+    <a href="https://KawausoJyou.github.io"><button id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd" d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"></path>
+        </svg>
+    </button></a>
+
+    
+    <a href="https://github.com/KawausoJyou/KawausoJyou.github.io/issues/4" target="_blank"><button class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
         </svg>
     </button></a>
     
-    <a href="https://KawausoJyou.github.io/rss.xml" target="_blank"><button id="buttonRSS" class="btn btn-invisible circle" title="RSS">
-        <svg class="octicon" width="16" height="16" >
-            <path id="pathRSS" fill-rule="evenodd"></path>
-        </svg>
-    </button></a>
-    <button class="btn btn-invisible circle" onclick="modeSwitch()" title="切换主题">
+
+    <button class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
         </svg>
     </button>
+
 </div>
 </div>
     <div id="content">
-<div style="margin-bottom: 16px;">Stay hungry, Stay foolish.</div>
-<nav class="SideNav border">
-<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/2.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">[CD自抓]陶喆 - 黑色柳丁[ALAC]</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#1B871D"><object><a style="color:#fff" href="https://KawausoJyou.github.io/tag.html#分享">分享</a></object></span>
-        <span class="Label LabelTime" style="background-color:#bc4c00">2024-03-24</span>
-    </div>
-</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/1.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">[CD自抓]Omoinotake - モラトリアム[ALAC]</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#1B871D"><object><a style="color:#fff" href="https://KawausoJyou.github.io/tag.html#分享">分享</a></object></span>
-        <span class="Label LabelTime" style="background-color:#bc4c00">2024-03-24</span>
-    </div>
-</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/4.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">记亚马逊日本海淘</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#58379C"><object><a style="color:#fff" href="https://KawausoJyou.github.io/tag.html#日常">日常</a></object></span>
-        <span class="Label LabelTime" style="background-color:#A333D0">2023-12-07</span>
-    </div>
-</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/3.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">微信读书使用体验</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#58379C"><object><a style="color:#fff" href="https://KawausoJyou.github.io/tag.html#日常">日常</a></object></span>
-        <span class="Label LabelTime" style="background-color:#A333D0">2023-08-11</span>
-    </div>
-</a>
-</nav>
+<div class="markdown-body" id="postBody"><p>黑胶唱片、CD 唱片等实体音乐载体早已种草许久，黑胶价格高且个人关注的 J-Pop 音乐艺人以发售 CD 为主，遂入手了一台 1994 年的中古 CD 机「松下 SL-S170」，并在淘宝购买了中島みゆき《世界が違って見える日》、中森明菜《CRIMSON》和 Omoinotake《モラトリアム》三张 CD。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/a17ccf56-5183-4657-b7e3-f8707fe87f08"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/a17ccf56-5183-4657-b7e3-f8707fe87f08" alt="1137D1D5-C2CD-4A0C-B7E2-449D432A609B JPG" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/b34e8616-5dea-41f5-b287-319ac208b22a"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/b34e8616-5dea-41f5-b287-319ac208b22a" alt="2E147342-F6AA-45E8-9019-C253848AC248 JPG" style="max-width: 100%;"></a><br>
+有了在淘宝购买 CD 唱片的经历后，为了避免买到盗版，以及对日本 CD 唱片价格对比后发现在亚马逊日本购买并找转运公司转运回国价格比淘宝还要低，很是心动。</p>
+<h3>转运公司</h3>
+<p>亚马逊日本有些商品可以直邮大陆，但大部分仅配送日本，所以找个转运公司是必不可少的，经过搜索查询决定使用『転送コム』。<br>
+注册账户登录后会提示上传身份证明资料认证身份，大陆用户需要上传身份证，如果收货地址与身份证地址不一，还需要额外上传可以证明收货地址的资料，比如银行账单等。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/ecc4c312-eadf-4961-8613-7400ed4f441c"><img width="1074" alt="1" src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/ecc4c312-eadf-4961-8613-7400ed4f441c" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/f4929a5d-8c18-4153-a79a-c8b17f0a2599"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/f4929a5d-8c18-4153-a79a-c8b17f0a2599" alt="Untitled" style="max-width: 100%;"></a><br>
+身份认证提交后等待审核，在等待审核时便可以在亚马逊日本购物并填写转运公司地址，不过货物运到转运公司后如果还没有完成身份认证是不会发货的。</p>
+<h3>亚马逊日本</h3>
+<p>注册亚马逊日本账号后在账户设置添加地址及付款方式，地址填写转运公司提供的地址，我所使用的転送コム在<a href="https://www.tenso.com/jp/my_page/address" rel="nofollow">官网</a>提供了填写方法。<br>
+下单选择刚刚创建的收货地址和付款方式，确定配送方法后提交订单，等待配送到转运公司。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/ee7a49b8-4265-413a-aef1-032d448481fa"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/ee7a49b8-4265-413a-aef1-032d448481fa" alt="Untitled (1)" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/0f10072e-49e8-41b5-a8fd-c644f78ce26f"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/0f10072e-49e8-41b5-a8fd-c644f78ce26f" alt="Untitled (2)" style="max-width: 100%;"></a></p>
+<h3>配送</h3>
+<p>货物配送到转运公司后会收到包裹到达通知的邮件，确认物品的价格，选择合适的邮寄方法并支付转运费用。<br>
+接下来便是漫长的等待，邮寄信息在日本郵政和中国邮政均能查到信息。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/c5c6d941-179c-4276-9298-f13167708f19"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/c5c6d941-179c-4276-9298-f13167708f19" alt="Untitled (3)" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/e76e1a6c-9392-4a18-a9c5-cab6089af096"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/e76e1a6c-9392-4a18-a9c5-cab6089af096" alt="Untitled (4)" style="max-width: 100%;"></a></p>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://KawausoJyou.github.io"> Hayashikawa </a>
 <p>
@@ -173,19 +146,45 @@ console.log("\n %c Gmeek last %c https://github.com/Meekdai/Gmeek \n\n", "color:
 </script>
 
 <script>
-document.getElementById("pathSearch").setAttribute("d",IconList["search"]);
-document.getElementById("pathRSS").setAttribute("d",IconList["rss"]);
-iconTOP=document.getElementsByClassName("svgTop1");
-iconPost=document.getElementsByClassName("svgTop0");
-for(var i=0;i<iconTOP.length;i++){
-    iconTOP[i].setAttribute("d",IconList["upload"]);
-    iconTOP[i].parentNode.style.color="red";
-}
-for(var i=0;i<iconPost.length;i++){
-    iconPost[i].setAttribute("d",IconList["post"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","KawausoJyou/KawausoJyou.github.io");
+    script.setAttribute("issue-term","title");
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else{script.setAttribute("theme","github-light");}
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
 }
 
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
 
 </script>
+
+
+
 
 </html>
