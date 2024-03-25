@@ -21,7 +21,7 @@
 
 ### 專輯封面
 
-<div align="center"><img src="https://ice.frostsky.com/2024/03/25/a1872e6df52447a9ac579b76724ec62d.jpeg"></div>
+<div align="center"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/07798b50-5a4b-4226-9567-03e9ca9860fd"></div>
 
 ### 下載
 
