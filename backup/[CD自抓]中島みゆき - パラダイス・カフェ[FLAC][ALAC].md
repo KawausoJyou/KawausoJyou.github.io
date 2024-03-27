@@ -4,10 +4,10 @@
 
 ### 曲目リスト
 
-1. 旅人のうた (2nd Version)
+1. 旅人のうた ＜2nd Version＞
 2. 伝説
 3. 永遠の嘘をついてくれ
-4. ALONE,PLEASE
+4. ALONE, PLEASE
 5. それは愛ではない
 6. なつかない猫
 7. SINGLES BAR
