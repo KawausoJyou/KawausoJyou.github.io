@@ -1,6 +1,6 @@
 ### 專輯封面
 
-<div align="center"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/07798b50-5a4b-4226-9567-03e9ca9860fd" width="50%" height="50%"></div>
+<div><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/07798b50-5a4b-4226-9567-03e9ca9860fd" width="50%" height="50%"></div>
 
 ### 曲目列表
 

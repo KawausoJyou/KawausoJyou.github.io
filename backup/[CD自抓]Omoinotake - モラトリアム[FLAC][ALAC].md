@@ -1,6 +1,6 @@
 ### ジャケ写
 
-<div align="center"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/3b6b2462-3584-4b0f-8d85-2e11911c0f9b" width="50%" height="50%"></div>
+<div><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/3b6b2462-3584-4b0f-8d85-2e11911c0f9b" width="50%" height="50%"></div>
 
 ### 曲目リスト
 
