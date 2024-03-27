@@ -1,6 +1,6 @@
-### 内容紹介
+### ジャケ写
 
-中島みゆき通算8枚目のオリジナル・アルバム。発売と同時にヒット曲となった9枚目のシングル「ひとり上手」、当時のラジオレギュラーであるオールﾅｲﾄニッポンのコーナー名でも使用され言葉自体が流行となった名曲。他、｢雪｣、「夜曲」 等、全9曲収録！編曲に星勝、安田裕美、松任谷正隆、萩田光雄を起用。
+<div align="center"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/8b295490-39cc-4aca-9f73-3a9c9be5ba78"></div>
 
 ### 曲目リスト
 
@@ -14,10 +14,6 @@
 8. 成人世代
 9. 夜曲
 
-### ジャケ写
-
-<div align="center"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/8b295490-39cc-4aca-9f73-3a9c9be5ba78"></div>
-
 ### ダウンロード
 
-https://1drv.ms/f/s!AsXN8HZUCwr2hMgtY67VrXOQOwT0Iw?e=dIsVuj
+https://1drv.ms/f/s!AsXN8HZUCwr2hMlmvihLAXmuiPan0w?e=UVUzt1
