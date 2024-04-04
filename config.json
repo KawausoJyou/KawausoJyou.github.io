@@ -5,9 +5,7 @@
     "GMEEK_VERSION":"last",
     "homeUrl":"http://blog.kawauso.xyz",
     "startSite":"08/01/2023",
-    "themeMode":"fix",
     "urlMode":"issue",
-    "style":"<style>.postTitle{font-size:30px}</style><style>#header{flex-direction:column-reverse}</style>",
     "showPostSource":"0",
-    "bottomText":"Stay hungry, Stay foolish."
+    "bottomText":"🤔 Stay hungry, Stay foolish."
 }
