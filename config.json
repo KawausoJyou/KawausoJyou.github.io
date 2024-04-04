@@ -8,6 +8,5 @@
     "themeMode":"fix",
     "urlMode":"issue",
     "style":"<style>.postTitle{font-size:30px}</style><style>#header{flex-direction:column-reverse}</style>"
-    "showPostSource":"0",
     "bottomText":"Stay hungry, Stay foolish."
 }
