@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <link rel="icon" href="https://raw.githubusercontent.com/KawausoJyou/KawausoJyou.github.io/main/files/Logo.png">
 <meta name="description" content="线上配镜早已不是什么新鲜事，这也不是我的第一次线上配镜。">
 <meta property="og:title" content="记线上配镜">
@@ -103,8 +103,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div><a target="_blank" rel="noopener noreferrer" href="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/9b11244c-29a7-45e6-a653-6baa73233456"><img src="https://github.com/KawausoJyou/KawausoJyou.github.io/assets/92703641/9b11244c-29a7-45e6-a653-6baa73233456" width="50%" height="50%" style="max-width: 100%;"></a></div>
 <p>经这次配镜得知左眼涨到了300度，散光涨到了100度，右眼涨到了350，散光涨到了75度，相比上次验光不升反降，这次看来还是得适度用眼啊（不可能。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;">🤔 Stay hungry, Stay foolish.</div>
+
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
+
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="http://blog.kawauso.xyz"> Hayashikawa </a>
 <p>
@@ -139,6 +141,8 @@ cmButton=document.getElementById("cmButton");
     span.setAttribute("class","Counter");
     span.innerHTML="2";
     cmButton.appendChild(span);
+
+
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
